@@ -1,0 +1,38 @@
+AllCops:
+  Exclude:
+    - bin/*
+    - db/schema.rb
+
+AsciiComments:
+  Enabled: false
+
+StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/Documentation:
+  Exclude:
+    - "db/migrate/**/*"
+    - "config/**/*"
+    - "app/models/application_record.rb"
+
+Layout/LineLength:
+  Exclude:
+    - "config/initializers/**/*"
+    - "db/migrate/**/*"
+
+Metrics/AbcSize:
+  Exclude:
+    - "db/migrate/**/*"
+  Max: 25
+
+Metrics/MethodLength:
+  Exclude:
+    - "db/migrate/**/*"
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - "db/migrate/**/*"
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
